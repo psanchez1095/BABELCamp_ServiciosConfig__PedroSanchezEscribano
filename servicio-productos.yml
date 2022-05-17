@@ -1,5 +1,5 @@
 server:
-  port: 9000
+  port: 9500
   servlet:
     context-path: /productos
 spring:
@@ -15,8 +15,8 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl 
 eureka:
   cliente:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: false  
+    fetch-registry: false  
     service-url:
       defaultZone: http://${hosteureka}:8761/eureka 
     instance:
